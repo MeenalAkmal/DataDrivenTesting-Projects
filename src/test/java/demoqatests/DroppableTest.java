@@ -21,7 +21,7 @@ public class DroppableTest {
         DroppablePage page = new DroppablePage(driver);
         Actions actions = new Actions(driver);
 
-        // 1️⃣ Simple Tab
+        // 1️ Simple Tab
         page.switchToTab("Simple");
         actions.dragAndDrop(page.getDragMeBox(), page.getDropHereBox()).perform();
         Thread.sleep(1000);
@@ -29,7 +29,7 @@ public class DroppableTest {
         System.out.println(" Simple Tab Result: " + simpleResult);
         assertEquals("Dropped!", simpleResult);
 
-        // 2️⃣ Accept Tab
+        // 2️ Accept Tab
         page.switchToTab("Accept");
         actions.dragAndDrop(page.getNotAcceptable(), page.getAcceptDropBox()).perform();
         Thread.sleep(1000);
@@ -43,7 +43,7 @@ public class DroppableTest {
         System.out.println(" Acceptable Result: " + acceptText);
         assertEquals("Dropped!", acceptText);
 
-        // 3️⃣ Prevent Propagation Tab
+        // 3️ Prevent Propagation Tab
         page.switchToTab("Prevent Propogation");
         actions.dragAndDrop(page.getDragBoxPropagation(), page.getOuterDropBox()).perform();
         Thread.sleep(1000);
@@ -52,7 +52,7 @@ public class DroppableTest {
         System.out.println(" Outer Drop Text: " + outerText);
         System.out.println(" Inner Drop Text: " + innerText);
 
-        // 4️⃣ Revert Draggable Tab
+        // 4️ Revert Draggable Tab
         page.switchToTab("Revert Draggable");
         actions.dragAndDrop(page.getWillRevert(), page.getRevertDropBox()).perform();
         Thread.sleep(1000);

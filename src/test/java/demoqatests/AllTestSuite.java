@@ -1,5 +1,5 @@
 
-/*
+
 package demoqatests;
 
 import org.junit.platform.suite.api.SelectClasses;
@@ -23,13 +23,13 @@ import org.junit.platform.suite.api.Suite;
     // AccordianTest.class,
     DatePickerTest.class,
     SliderTest.class,
-    // ProgressBarTest.class,
-    // ToolTipsTest.class,
+     ProgressBarTest.class,
+     ToolTipsTest.class,
     ModalDialogsTest.class,
     AutoCompleteTest.class,
     // BrokenLinksAndImages.class,
     MenuTest.class,
-    // TabsTest.class,
+     TabsTest.class,
     SelectMenuTest.class,
     SortableTest.class,
     SelectableTest.class,
@@ -44,6 +44,4 @@ import org.junit.platform.suite.api.Suite;
 public class AllTestSuite {
     
 }
-*/
-
 

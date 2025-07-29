@@ -34,6 +34,6 @@ public class ToolTipsTest extends basetest {
         System.out.println("Tooltip on text field: " + textFieldTooltip);
         assertEquals("You hovered over the text field", textFieldTooltip);
 
-        System.out.println("✅ Tooltip tests passed!");
+        System.out.println(" Tooltip tests passed!");
     }
 }

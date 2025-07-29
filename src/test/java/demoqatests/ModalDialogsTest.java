@@ -18,7 +18,7 @@ public class ModalDialogsTest extends basetest {
         driver.get("https://demoqa.com/modal-dialogs");
         ModalDialogsPage modalPage = new ModalDialogsPage(driver);
 
-        // ✅ Test Small Modal
+        //  Test Small Modal
         modalPage.openSmallModal();
 
         new WebDriverWait(driver, Duration.ofSeconds(5))
@@ -36,7 +36,7 @@ public class ModalDialogsTest extends basetest {
         modalPage.closeSmallModal();
         Thread.sleep(3000);
 
-        // ✅ Test Large Modal
+        //  Test Large Modal
         modalPage.openLargeModal();
 
         new WebDriverWait(driver, Duration.ofSeconds(5))

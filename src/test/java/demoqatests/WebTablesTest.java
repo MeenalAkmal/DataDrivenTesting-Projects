@@ -38,7 +38,7 @@ public class WebTablesTest extends basetest {
         webTablesPage.clickSubmit();
         Thread.sleep(1500);  // Let the new row render
 
-        // ✅ Fetch all rows and check if the new one exists
+        //  Fetch all rows and check if the new one exists
         List<WebElement> rows = driver.findElements(By.cssSelector(".rt-tbody .rt-tr-group"));
         boolean userFound = false;
         for (WebElement row : rows) {
